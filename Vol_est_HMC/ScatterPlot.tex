@@ -1,0 +1,27 @@
+\input pictex\magnification=\magstep1\nopagenumbers
+\ \vskip.5truein
+\centerline{
+\beginpicture
+\setcoordinatesystem units <   .08 truein, .08 truein>
+\setplotarea x from 5 to 40, y from  5 to 40
+\axis left
+ticks    numbered from  5 to 40 by 5
+/
+\put {Hidden} [cr] at 0 27
+\put {Markov} [cr] at 0 25
+\put {Chain} [cr] at 0 23
+\axis bottom
+label {EWMA}
+ticks  numbered from 5 to 40 by 5
+/
+\plot 5 5  40 40 /
+\plot 5 40  40 40  40 5 /
+% Un-comment this to show the scatterplot:
+%\multiput {$\cdot$} at "ScatterData.txt"
+\endpicture
+}
+
+
+
+
+\vfill\end
